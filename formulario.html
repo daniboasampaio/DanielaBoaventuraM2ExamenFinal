@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Libro</title>
+ <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <div class="contenedor">
+    <h2>Nuevo Libro</h2>
+    <form action="insertarlibro.php" method="POST">
+        <label for="titulo">Título del libro:</label><br>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+
+        <label for="nombreAutor">Autor:</label><br>
+        <input type="text" id="nombreAutor" name="nombreAutor" required><br><br>
+
+        <label for="numPage">Número de páginas:</label><br>
+        <input type="number" id="numPage" name="numPage" required><br><br>
+
+        <label for="precio">Precio:</label><br>
+        <input type="number" step="0.01" id="precio" name="precio" required><br><br>
+
+        <input type="submit" value="Guardar libro">
+    </form>
+    </div>
+</body>
+</html>
